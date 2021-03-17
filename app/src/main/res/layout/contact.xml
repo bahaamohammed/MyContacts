@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layoutDirection="ltr">
+
+    <ImageView
+        android:id="@+id/ivContact"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/contacticon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvContactName"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Bahaa Mohammed"
+        android:textSize="20dp"
+        android:textColor="#000"
+        app:layout_constraintStart_toEndOf="@id/ivContact"
+        app:layout_constraintTop_toTopOf="@id/ivContact" />
+
+    <TextView
+        android:id="@+id/tvContactNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="0595144288"
+        android:textSize="16dp"
+        android:textColor="#c7c7c7"
+        app:layout_constraintStart_toStartOf="@+id/tvContactName"
+        app:layout_constraintTop_toBottomOf="@id/tvContactName" />
+
+    <TextView
+        android:id="@+id/tvContactAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="Gaza - Rafah"
+        android:textSize="14dp"
+        android:textColor="#cdc7c7"
+        app:layout_constraintBottom_toBottomOf="@id/ivContact"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/tvContactNumber" />
+    <TextView
+        android:id="@+id/tvPar"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="-------------------------------------------------------------------------"
+        android:textAlignment="center"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toEndOf="@+id/ivContact"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvContactNumber"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
